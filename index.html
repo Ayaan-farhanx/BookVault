@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>My Library</h1>
+        <button id="new-book-btn">+ Add Book</button>
+    </header>
+
+    <section class="tools">
+        <input id="search" placeholder="Search books...">
+
+        <select id="filter">
+            <option value="all">All</option>
+            <option value="read">Read</option>
+            <option value="unread">Unread</option>
+        </select>
+
+        <select id="sort">
+            <option value="">Sort</option>
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+            <option value="pages">Pages</option>
+        </select>
+    </section>
+    <main id="library"></main>
+    <dialog id="book-dialog">
+
+        <form id="book-form">
+
+            <input id="title" placeholder="Title" required>
+
+            <input id="author" placeholder="Author" required>
+
+            <input id="pages" type="number" placeholder="Pages" required>
+
+            <label>
+                <input id="read" type="checkbox">
+                Already read
+            </label>
+
+            <button>Add</button>
+        </form>
+
+    </dialog>
+</body>
+</html>
